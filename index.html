@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body>
+  <div class="main">
+    <h2 class="title">SPLI<br>TTER</h2>
+
+    <div class="main_container">
+      <form action="" name="bill" id="bill"">
+        <div class=" input_container">
+        <section class="bill">
+          <label class="text">Bill</label>
+          <input id="input_bill" type="number" placeholder="0">
+          <button type="submit" class="invisible"></button>
+        </section>
+      </form>
+
+      <section class="select_type">
+        <p class="text">Select Tip %</p>
+        <div class="btt_1">
+          <button id="five" class="btt_perc">5%</button>
+          <button id="ten" class="btt_perc">10%</button>
+          <button id="fifteen" class="btt_perc">15%</button>
+        </div>
+        <div class="btt_2">
+          <button id="twenty-five" class="btt_perc">25%</button>
+          <button id="fifty" class="btt_perc">50%</button>
+          <input type="number" placeholder="Custom" class="input_custom">
+        </div>
+      </section>
+
+      <form action="">
+        <section class="number-people">
+          <p class="text">Number of People</p>
+          <input id="input_number" type="number" placeholder="0">
+          <button type="submit" class="invisible2"></button>
+        </section>
+    </div>
+    </form>
+    <div class="result">
+
+      <div>
+        <section class="tip_amount">
+          <div class="amount">
+            <p class="text_result">Tip Amount</p>
+            <small>/ person</small>
+          </div>
+          <h1>$0.00</h1>
+        </section>
+
+        <section class="total">
+          <div class="total_div">
+            <p class="text_result">Total</p>
+            <small>/ person</small>
+          </div>
+          <h1>$0.00</h1>
+        </section>
+      </div>
+
+      <button class="btt active">RESET</button>
+
+    </div>
+
+  </div>
+  </div>
+  <script type="text/javascript" src="/index.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Samuel Serra</a>.
+  </div> -->
+</body>
+
+</html>
