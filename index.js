@@ -1,20 +1,21 @@
 /* Pegando o valor do input */
 const btt_bill = document.querySelector('.invisible')
+const btt_number = document.querySelector('.invisible2')
 value_bill = 0
+value_number = 0
+value_tip = 0
 
 btt_bill.addEventListener('click', function (e) {
     e.preventDefault();
     const bill = document.querySelector('#input_bill')
-    value_bill = Number(bill.value)
+    value_bill = parseFloat(bill.value)
 })
-
-const btt_number = document.querySelector('.invisible2')
-value_number = 0
 
 btt_number.addEventListener('click', function(e){
     e.preventDefault()
     const number = document.querySelector('#input_number')
-    value_number = Number(number.value)
+    value_number = parseFloat(number.value)
+    value_tip = (count_perc / value_number).toFixed(2)
 })
 
 /* Deixando os botões marcados */
@@ -49,10 +50,8 @@ btt[3].onclick = function(e){
 }
 btt[4].onclick = function(e){
     e.preventDefault()
-    count_perc = value_bill * 50 / 100
+    count_perc = (value_bill * 50) / 100
 }
-
-let count_bill = Number(count_perc) / Number(value_number)
 
 
 
