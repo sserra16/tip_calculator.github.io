@@ -57,7 +57,6 @@ body {
 
 
 .input_container {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -134,6 +133,7 @@ body {
     font-weight: 510;
     letter-spacing: 1.1px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .input_custom {
@@ -166,7 +166,7 @@ body {
     color: var(--very-dark-cyan);
 }
 
-.btt_perc:focus {
+.btt_perc.checked {
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
 }
@@ -194,6 +194,24 @@ body {
 
 #input_number:focus {
     outline-color: var(--strong-cyan);
+}
+
+#input_number.error-wrapper {
+    outline-color: hsl(9, 70%, 52%);
+}
+
+.text_error {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    display: none;
+    color: hsl(9, 70%, 52%);
+}
+
+.error-v{
+    display: inline;
 }
 
 /* Conteúdo dos resultados */
@@ -260,15 +278,17 @@ h1 {
     font-family: 'Space Mono', monospace;
     color: var(--very-dark-cyan);
     font-weight: 600;
+    transition: 0.3s ease-in-out;
+    opacity: .5;
+}
+
+.btt.active {
+    opacity: 1;
     cursor: pointer;
 }
 
-.btt:hover {
+.btt.active:hover {
     background-color: var(--lightt-grayish-cyan);
-}
-
-.invisible, .invisible2 {
-    display: none;
 }
 
 /* Responsividade */

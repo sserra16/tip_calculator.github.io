@@ -32,34 +32,35 @@
     <h2 class="title">SPLI<br>TTER</h2>
 
     <div class="main_container">
-      <form action="" name="bill" id="bill"">
+      <form name="bill" id="bill"">
         <div class=" input_container">
         <section class="bill">
           <label class="text">Bill</label>
           <input id="input_bill" type="number" placeholder="0">
-          <button type="submit" class="invisible"></button>
         </section>
       </form>
 
       <section class="select_type">
         <p class="text">Select Tip %</p>
         <div class="btt_1">
-          <button id="five" class="btt_perc">5%</button>
-          <button id="ten" class="btt_perc">10%</button>
-          <button id="fifteen" class="btt_perc">15%</button>
+          <button class="btt_perc tip">5%</button>
+          <button class="btt_perc tip">10%</button>
+          <button class="btt_perc tip">15%</button>
         </div>
         <div class="btt_2">
-          <button id="twenty-five" class="btt_perc">25%</button>
-          <button id="fifty" class="btt_perc">50%</button>
+          <button class="btt_perc tip">25%</button>
+          <button class="btt_perc tip">50%</button>
           <input type="number" placeholder="Custom" class="input_custom">
         </div>
       </section>
 
       <form action="">
         <section class="number-people">
-          <p class="text">Number of People</p>
-          <input id="input_number" type="number" placeholder="0">
-          <button type="submit" class="invisible2"></button>
+          <div class="text_error">
+            <p class="text">Number of People</p>
+            <p class="error text">Can't be zero</p>
+          </div>
+          <input id="input_number" class="" type="number" placeholder="0">
         </section>
     </div>
     </form>
@@ -79,7 +80,7 @@
             <p class="text_result">Total</p>
             <small>/ person</small>
           </div>
-          <h1>$0.00</h1>
+          <h1 class="number_tip">$0.00</h1>
         </section>
       </div>
 
